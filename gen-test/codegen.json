@@ -1,11 +1,15 @@
-[
-  {
-    "model": "test-service/service-1.json",
-    "destination": "out-test",
-    "targets": [
-      "*"
-    ],
-    "enabled": true,
-    "config": {}
-  }
-]
+{
+  "wipeDirectories": [
+  ],
+  "modelConfigs": [
+    {
+      "model": "test-service/service-1.json",
+      "destination": "out-test",
+      "targets": [
+        "*"
+      ],
+      "enabled": true,
+      "config": {}
+    }
+  ]
+}
