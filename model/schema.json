@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "serviceName": {
+      "description": "the name of the micro-service",
+      "type": "string"
+    },
+    "javaPackage": {
+      "description": "base java package",
+      "title": "Java Package",
+      "type": "string"
+    }
+  },
+  "required": [
+    "javaPackage",
+    "serviceName"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#"
+}
