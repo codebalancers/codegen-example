@@ -6,6 +6,7 @@
   "author": "codebalancers",
   "license": "MIT",
   "description": "Codegen example",
+  "private": true,
   "scripts": {
     "clean": "rm -rf build/",
     "prep-dir": "mkdir -p build/",
