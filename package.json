@@ -10,9 +10,12 @@
     "clean": "rm -rf build/",
     "prep-dir": "mkdir -p build/",
     "compile": "tsc",
+    "compile.w": "tsc -w",
     "lint": "tslint --project tslint.json codegen/**/*.ts",
     "copy-resources": "copyfiles codegen/**/*.tpl build",
-    "build": "yarn run clean && yarn run prep-dir && yarn run copy-resources && yarn run lint && yarn run compile",
+    "copy-resources.w": "watch 'yarn run copy-resources' codegen/generators/ --interval=1",
+    "build": "yarn run clean && yarn run prep-dir && yarn run lint && yarn run compile && yarn run copy-resources",
+    "build.w": "yarn run clean && yarn run prep-dir && yarn run lint && concurrently --kill-others \"yarn run compile.w\" \"yarn run copy-resources.w\"",
     "generate": "codegen generate -m ./model -c ./gen-test/codegen.json -f ./build/codegen/filters/index.js --mp ./build/codegen/model-processors/index.js",
     "schema:generate": "codegen schema:generate -s ./src/schema/v1/model.ts",
     "serve": "codegen serve -m ./model"
@@ -28,9 +31,11 @@
     "@types/node": "^10.3.3",
     "@types/nunjucks": "^3.0.0",
     "@types/prettier": "^1.13.1",
+    "concurrently": "^3.5.1",
     "copyfiles": "^2.0.0",
     "tslint": "^5.10.0",
     "tslint-eslint-rules": "^5.1.0",
-    "typescript": "2.6.2"
+    "typescript": "2.6.2",
+    "watch": "^1.0.2"
   }
 }
