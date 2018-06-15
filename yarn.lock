@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@codebalancers/codegen@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@codebalancers/codegen/-/codegen-1.0.2.tgz#5e62668ea1e483a1aa84ee0e6ad0c2d907fb1332"
+"@codebalancers/codegen@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@codebalancers/codegen/-/codegen-1.0.3.tgz#d54693cdf3230dbf73a3f2e66cc3d351ec4b5bfd"
   dependencies:
     "@codebalancers/commons" "^1.0.4"
     "@codebalancers/logging" "^1.0.10"
@@ -24,6 +24,10 @@
 "@codebalancers/logging@^1.0.10":
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/@codebalancers/logging/-/logging-1.0.10.tgz#2fd7b905f8a931cc20b64c663fb10fbc31a4fbbf"
+
+"@types/lodash@^4.14.109":
+  version "4.14.109"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.109.tgz#b1c4442239730bf35cabaf493c772b18c045886d"
 
 "@types/node@^10.3.3":
   version "10.3.3"

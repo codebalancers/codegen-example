@@ -12,15 +12,18 @@
     "compile": "tsc",
     "lint": "tslint --project tslint.json codegen/**/*.ts",
     "build": "yarn run clean && yarn run prep-dir && yarn run lint && yarn run compile",
-    "generate": "codegen generate -m ./model -c codegen.json -f ./build/filters/index.js --mp ./build/model-processors/index.js",
+    "generate": "codegen generate -m ./model -c ./gen-test/codegen.json -f ./build/codegen/filters/index.js --mp ./build/codegen/model-processors/index.js",
     "schema:generate": "codegen schema:generate -s ./src/schema/v1/model.ts",
     "serve": "codegen serve -m ./model"
   },
   "dependencies": {
-    "@codebalancers/codegen": "^1.0.2",
+    "@codebalancers/codegen": "^1.0.3",
+    "@codebalancers/commons": "^1.0.4",
+    "@codebalancers/logging": "^1.0.10",
     "prettier": "^1.13.5"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.109",
     "@types/node": "^10.3.3",
     "@types/nunjucks": "^3.0.0",
     "@types/prettier": "^1.13.1",
