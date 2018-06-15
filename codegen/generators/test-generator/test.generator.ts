@@ -1,6 +1,6 @@
 import { TestModel } from './test.model';
 import * as _path from 'path';
-import { Artifact } from '@codebalancers/codegen/cb-codegen/app/generator/artifact';
+import { Artifact, ArtifactType } from '@codebalancers/codegen/cb-codegen/app/generator/artifact';
 import { GeneratorUtils } from '@codebalancers/codegen/cb-codegen/app/utils/generator.utils';
 import * as _ from 'lodash';
 import { Generator } from '@codebalancers/codegen/cb-codegen/templates/generator';
@@ -12,6 +12,6 @@ export class TestGenerator implements Generator {
 
     GeneratorUtils.generateAndWrite(templateFileName, destinationFile, model);
 
-    return new Artifact(destinationFile, 3, false);
+    return new Artifact(destinationFile, ArtifactType.TEXT, false);
   }
 }
