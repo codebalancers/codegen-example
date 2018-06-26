@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@codebalancers/codegen@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@codebalancers/codegen/-/codegen-1.0.7.tgz#445407d0e1580df803e9cc8f2efa4c3643d208f0"
+"@codebalancers/codegen@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@codebalancers/codegen/-/codegen-1.0.10.tgz#fbc8baf6bdf26a17fb5eaa1701697d9615c3a829"
   dependencies:
     "@codebalancers/commons" "^1.0.4"
     "@codebalancers/logging" "^1.0.10"

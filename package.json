@@ -22,7 +22,7 @@
     "serve": "codegen serve -m ./model"
   },
   "dependencies": {
-    "@codebalancers/codegen": "^1.0.7",
+    "@codebalancers/codegen": "^1.0.10",
     "@codebalancers/commons": "^1.0.5",
     "@codebalancers/logging": "^1.0.10",
     "prettier": "1.12.1"
